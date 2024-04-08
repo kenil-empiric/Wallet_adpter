@@ -97,7 +97,7 @@ const Content: FC = () => {
     const onClick = useCallback( async () => {
 
         if (!publicKey) throw new WalletNotConnectedError();
-        connection.getBalance(publicKey).then((bal) => {
+        connection.getBalance(publicKey).then((bal: number) => {
             console.log(bal/LAMPORTS_PER_SOL);
 
         });
