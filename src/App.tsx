@@ -133,25 +133,11 @@ function setTheWallet(e: any){
     return (
        
 
-        <div className="App">
-                <div className="navbar">
-        <div className="navbar-inner ">
-          <a id="title" className="brand" href="#">Brand</a>
-          <ul className="nav">
-
-
-          </ul>
-          <ul className="nav pull-right">
-                      <li><a href="#">White Paper</a></li>
-                      <li className="divider-vertical"></li>
+        <div className="App ">
+        
                       <li><WalletMultiButton /></li>
 
-                    </ul>
-        </div>
-      </div>
-<input value={lamports} type="number" onChange={(e) => setTheLamports(e)}></input>
-        <br></br>
-      <button className='btn' onClick={onClick}>Send Sol </button>
+                    
 
 
         </div>
